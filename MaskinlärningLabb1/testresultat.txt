@@ -1,0 +1,37 @@
+Test 1,
+1. Nej, de första 10 värdena är olika eftersom programmet genererade slumpmässiga tal när det körs.
+2. lendata ska visa talet 20 för att datainnehållet innehåller 20.
+3. Allt värde som blev genererat mellan 50 och 60. functionen np.random.uniform(50, 60, 100) skapar 100 olika slumpmässiga decimaltal inom denna intervall och gränsvärdet 60 brukar inte ingå.
+4. När återställer min kod till np.random.uniform(0, 100, 100) gör så att koden skapar 100 slumpässiga värden mellan talet 0 och 100.
+
+Test 2,
+1. När jag öppnar programmet öppnas histogrammet som har hämtats från matplotlib. 
+2. Om man sätter 5 på stapelintervall blir staplarna bredare medan 20 gör dem smalarer och visar fördelningen mer tydligare. Datamängden ändras inte för att bara antalet intervall i histogrammet ändras.
+3. Det finns fler observationer i histogrammet och staplarna brukar få högre frekvenser. Fördelningen brukar ockse se lite jämnare ut för fler slumpmässiga värden får användas.
+4. På X-axeln så visar ett mindre värdesintervall ungefär 0 till 10 i stiller för det gamla, från 0 till 100 och värdena får fördelas nu på ett mindre intervall.
+5. Min datagenerering har återställts till np.(0, 100, 100) och till bins = 10.
+
+Test 3,
+1. data.py ska bestämma vilken typ av data som skapas, funktionen skapa_data() använder NumPy för att generera random tal.
+2. diagram.py bestämmer hur diagrammet ska se ut. Där bestäms bland annat talet stapelintervall och diagrammets tilel och dessutom namnen på axlarna.
+3. Data skickas till visa_histogram(data) eftersom diagrammet ska kunna visa samma mängd av data som skapades i data.py. Så att funktionerna ska kunna fungera för olika datamängder utan att behöva skapa nya typer av värden.
+4. return skickar tillbaka ett eller flera värde från funktioner så att detkan sparas i en variabel och användas senar i programmet. Medan print() visar eller printar värderna på skärmen men den skickar inte tillbaka något till programmet, annars använder man return.
+
+Test med kontrollerade data
+1. Vad händer med datamängden [10, 10, 20, 30, 30, 30, 40]?
+Datamängden har 7 styckna värden. Värde 10 kommer två gåner medan 20 förekommer bara en gång, 30 tre gånger och 40 en gång. Programmet eller Histogrammet visa hur många värden som finns i varje stapelsinterrvall.
+
+2. Hur visas fem identiska värden, [5, 5, 5, 5, 5]?
+Alla dem fem styckna värden är lika med 5 och därför hamnar i samma stapelsintevall. En stapel visar fem observationer och andra övriga intervaller visar inte någon slags observation.
+
+Fördjupning med slumpmässiga heltal och deciamaltal
+1. Vad är skillnaden mellan slumpmässiga heltal och decimaltal?
+Ett slumpmässigt heltal saknar decimaler medan decimaltal kan ha både decimaler och heltal.
+I fuktionen np.random.randint(0, 101, 100) skapar flera heltal från 0 till 100 medan np.random.uniform(0, 100, 100) skapar massa random decimaltal inom intervallet.
+2. Varför ser histogrammen olika ut när programmet genererar 10, 100 och 10 tusen värden?
+Med 10 värden kan fördelningen se lite ojämn  ut för att det finnns ett mindre antal observationer. Med 100 värden blir fördelningen mycket snyggare och ofta tydligare men med 10000 värden visar histogrammet den jämna fördelningen mycket bättre. Staplarnas höjd och bredd påverkas av hur många värden som genereras.
+
+
+Sammanfattning
+
+Programmet innehåller tre moduler. data.py skapar data, diagram.py visar data genom ett histogram och för att kunda ens köra programmet kopplar main.py ihop alla funktioner från project.
