@@ -29,9 +29,10 @@ Fördjupning med slumpmässiga heltal och deciamaltal
 Ett slumpmässigt heltal saknar decimaler medan decimaltal kan ha både decimaler och heltal.
 I fuktionen np.random.randint(0, 101, 100) skapar flera heltal från 0 till 100 medan np.random.uniform(0, 100, 100) skapar massa random decimaltal inom intervallet.
 2. Varför ser histogrammen olika ut när programmet genererar 10, 100 och 10 tusen värden?
-Med 10 värden kan fördelningen se lite ojämn  ut för att det finnns ett mindre antal observationer. Med 100 värden blir fördelningen mycket snyggare och ofta tydligare men med 10000 värden visar histogrammet den jämna fördelningen mycket bättre. Staplarnas höjd och bredd påverkas av hur många värden som genereras.
+Med 10 värden kan fördelningen se lite ojämn  ut för att det finnns ett mindre antal observationer. Med 100 värden blir fördelningen mycket snyggare och ofta tydligare men med 10000 värden visar histogrammet den jämna fördelningen mycket bättre.Staplarnas höjd och bredd påverkas av hur många värden som genereras.
 
 
 Sammanfattning
 
 Programmet innehåller tre moduler. data.py skapar data, diagram.py visar data genom ett histogram och för att kunda ens köra programmet kopplar main.py ihop alla funktioner från project.
+Genom att ändra antalet värden, antalet stapeldiagram och värdeintervallet kan man få kolla hur datamängden och diagrammet ändrar värden. En datamängd kan illehålla bara själva värderna medan ett histogram visar hur ett värde eller flera fördelas.
